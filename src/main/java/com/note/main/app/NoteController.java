@@ -72,6 +72,8 @@ public class NoteController {
                 }
                 refreshTable(); // Refresh table after saving
                 htmlEditor.setHtmlText("");
+                tf_judul.setText(""); // Clear the HTML editor after saving
+                htmlEditor.setDisable(false);
             }
         });
         btn_edit.setOnAction(new EventHandler<ActionEvent>() {
